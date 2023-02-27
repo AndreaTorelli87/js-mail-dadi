@@ -1,14 +1,35 @@
 let utentiAutorizzati = ["pippo","pluto","paperino","paperoga","topolino"];
 
-const utentePrompt = prompt("Come ti chiami?");
+const verifica = document.querySelector('#verifica');
 
-for (i = 0; i < utentiAutorizzati.length; i++){
+const esito = document.getElementById("esito");
 
-   let utente = utentiAutorizzati[i];
+verifica.addEventListener('click',
+   function () {
 
-   if (utentePrompt == utente) {
-      console.log("benvenuto");
-   // } else if (utentePrompt !== utente) {
-   //    console.log("Non sei autorizzat* ad accedere"); //opzionale, se si vuole dare errore negli altri casi
+      const utentePrompt = document.getElementById('utentePrompt').value;
+
+      
+      for (i = 0; i < utentiAutorizzati.length; i++){
+
+         let utente = utentiAutorizzati[i];
+
+         if (utentePrompt == utente) {
+            document.getElementById("esito").innerHTML = "Benvenuto!!!";
+         }
+      }
+
+      esito.className =  "";
    }
-}
+)
+
+const formReset = document.querySelector('#annulla');
+
+formReset.addEventListener('click', 
+   function() {
+      
+      const utentePrompt = document.getElementById('utentePrompt');
+      utentePrompt.value = "";
+      esito.className += " d-none";
+   }
+);
