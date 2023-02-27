@@ -2,3 +2,46 @@
    font-family: sans-serif;
 }
 
+body{
+   background-color: yellow;
+}
+
+body > div{
+   border: dashed 2px red;
+   background-color: rgba(255, 0, 0, 0.7);
+}
+
+#numeroUtente, #numeroComputer{
+   height: 11rem;
+   width: 11rem;
+} 
+
+.dado1{
+   background-image: url(../img/dado1.png);
+   background-size: cover;
+}
+
+.dado2{
+   background-image: url(../img/dado2.png);
+   background-size: cover;
+}
+
+.dado3{
+   background-image: url(../img/dado3.png);
+   background-size: cover;
+}
+
+.dado4{
+   background-image: url(../img/dado4.png);
+   background-size: cover;
+}
+
+.dado5{
+   background-image: url(../img/dado5.png);
+   background-size: cover;
+}
+
+.dado6{
+   background-image: url(../img/dado6.png);
+   background-size: cover;
+}

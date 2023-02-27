@@ -16,10 +16,11 @@ verifica.addEventListener('click',
 
          if (utentePrompt == utente) {
             document.getElementById("esito").innerHTML = "Benvenuto!!!";
+            location.replace("../dadi/index.html")
          }
       }
 
-      esito.className =  "";
+      esito.className = "my-5 text-danger fw-bold";
    }
 )
 
