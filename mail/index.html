@@ -10,18 +10,23 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="p-0 m-0">
-        <div class="container text-center my-5">
+        <div class="container text-center my-5 text-white rounded-5">
+            <h1 class="fw-bolder py-4">GIOCA A DADI</h1>
             <form class="my-5">
-                <div>
-                    <label for="utentePrompt">Inserisci il tuo nome</label>
+                <div class="my-4 fs-4">
+                    <label for="utentePrompt">Inserisci il tuo username</label>
                     <input class="text-center" type="text" id="utentePrompt" />
                 </div>
+                <div class="my-4 fs-4">
+                    <label for="passPrompt">Inserisci la tua password</label>
+                    <input class="text-center" type="password" id="passPrompt" />
+                </div>
             </form>
-            <div class=" my-5">
-                <button id="verifica" class="btn btn-outline-dark">Verifica</button>
-                <button id="annulla" class="btn btn-outline-dark">Annulla</button>
+            <div>
+                <button id="verifica" class="btn btn-outline-light btn-lg m-3">Verifica</button>
+                <button id="annulla" class="btn btn-outline-light btn-lg m-3">Annulla</button>
             </div>
-            <h1 id="esito" class="d-none">Non sei autorizzat* ad accedere</h1>
+            <h2 id="esito" class="d-none">Non sei autorizzat* ad accedere</h2>
         </div>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
